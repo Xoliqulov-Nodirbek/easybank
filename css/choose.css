@@ -1,0 +1,46 @@
+.choose__inner{
+    background-color: #F4F5F7;
+}
+
+.choose__header{
+    max-width: 635px;
+    width: 100%;
+    height: 136px;
+    padding: 96px 0px 150px 165px;
+}
+
+.choose__title{
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: #2D314D;
+}
+
+.choose__text{
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+}
+
+
+
+/* ---------- Choose-list ---------- */
+
+
+
+/* ---------- Adaptive-part ------------ */
+
+
+@media only screen and (max-width: 990px){
+
+    .choose__header{
+        padding: 70px 0px 100px 60px;
+        text-align: center;
+    }
+
+}
