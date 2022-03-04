@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------- Hader ------------ */
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+}
+
+/* ----- Header logo ------ */
+.logo__img {
+  width: 139px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+/* ------- Header nav -------- */
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item:not(:first-child) {
+  padding-left: 30px;
+}
+
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  font-family: Public Sans;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  color: #9597A5;
+  padding: 32px 0;
+}
+
+.nav__link::before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav__item:hover .nav__link::before {
+  width: 100%;
+}
+
+/* -------- Header btn -------- */
+.header__button {
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border: none;
+  border-radius: 22px;
+  padding: 8px 35px;
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.header__menu--img {
+  display: none;
+}
+
+/* ---------- Active part of the Header ---------- */
+.header__button:active {
+  opacity: 0.4;
+}
+
+/* ------------- Adaptive part of the Header ----------- */
+@media (min-width: 768px) and (max-width: 992px) {
+  .logo__img {
+    width: 110px;
+    height: 25px;
+  }
+  .nav__link {
+    font-family: Public Sans;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .header__button {
+    padding: 10px 30px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .logo__img {
+    margin-left: 30px;
+    width: 100px;
+    height: 25px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__button {
+    margin-right: 30px;
+    padding: 10px 25px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo__img {
+    margin: 8px 0 0 20px;
+    width: 100px;
+    height: 20px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__menu--img {
+    display: block;
+    margin: 0px 20px;
+  }
+}
+
+.generation {
+  background-image: url("../images/Background_image.jpg");
+  background-repeat: no-repeat;
+  background-position: 730px -250px;
+  height: 656px;
+  z-index: -1;
+}
+
+.next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 656px;
+  background-image: url("../images/");
+}
+
+.next__element {
+  max-width: 447px;
+  width: 100%;
+}
+
+.next__element--title {
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 1px;
+  color: #2D314D;
+}
+
+.next__element--text {
+  font-family: Public Sans;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+  margin: 24px 0 36px 0;
+}
+
+.next__element--btn {
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 8px 35px;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  border: none;
+}
+
+/* -------- Active part of the Generation ----------- */
+.next__element--btn:active {
+  opacity: 0.4;
+}
+
+/* ---------- Responsive part of the Generation ------------  */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/public-sans-v11-latin-100.woff2") format("woff2"), url("../fonts/public-sans-v11-latin-100.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/public-sans-v11-latin-regular.woff2") format("woff2"), url("../fonts/public-sans-v11-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/public-sans-v11-latin-700.woff2") format("woff2"), url("../fonts/public-sans-v11-latin-700.woff") format("woff");
+}
+/*# sourceMappingURL=main.css.map */

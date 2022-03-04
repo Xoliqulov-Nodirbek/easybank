@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----------- Hader ------------ */
+
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* ----- Header logo ------ */
+
+.logo__img{
+    width: 139px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+/* ------- Header nav -------- */
+
+.nav__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav__item:not(:first-child){
+    padding-left: 30px;
+}
+
+.nav__link{
+    position: relative;
+    text-decoration: none;
+    font-family: Public Sans;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.107692px;
+    color: #9597A5;
+    padding: 32px 0;
+    
+
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 2px;
+        transition: all 0.3s ease;
+    }
+}
+
+.nav__item:hover .nav__link::before{
+    width: 100%;
+}
+
+/* -------- Header btn -------- */
+
+.header__button{
+    background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border: none;
+    border-radius: 22px;
+    padding: 8px 35px;
+    font-family: Public Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.header__menu--img{
+    display: none;
+}
+
+
+
+/* ---------- Active part of the Header ---------- */
+
+.header__button:active{
+    opacity: 0.4;
+}
+
+
+/* ------------- Adaptive part of the Header ----------- */
+
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    
+    .logo__img{
+        width: 110px;
+        height: 25px;
+    }
+    
+    .nav__link{
+        font-family: Public Sans;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .header__button{
+        padding: 10px 30px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    
+    .logo__img{
+        margin-left: 30px;
+        width: 100px;
+        height: 25px;
+    }
+    
+    .header__nav{
+        display: none;
+    }
+    
+    .header__button{
+        margin-right: 30px;
+        padding: 10px 25px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 576px){
+    
+    .logo__img{
+        margin: 8px 0 0 20px  ;
+        width: 100px;
+        height: 20px;
+    }
+
+    .header__nav{
+        display: none;
+    }
+    
+    .header__button{
+        display: none;
+    }
+
+    .header__menu--img{
+        display: block;
+        margin: 0px 20px;
+    }
+}
